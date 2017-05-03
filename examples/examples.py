@@ -2,6 +2,7 @@
 
 import matches
 
+
 """
 These are some simple examples
 that show the naming conventions
@@ -21,6 +22,7 @@ For example:
 match_size_with(shirt)
 match_tires_with(car)
 match_tax_with(income)
+
 """
 
 def match_login_url_with(username, default="https://foo.bar/login"):
@@ -105,3 +107,50 @@ def match_taxrate_with(income_and_state, default=20.0):
         (30000, "arizona"): arizona_taxrate()
     }
     return matches(options, income_and_state, default=default)
+
+
+# FizzBuzz
+
+def fizz(number):
+    """
+    Fizz
+    """
+    return "Fizz" if number % 3 == 0 else False
+
+def buzz(number):
+    """
+    Buzz
+    """
+    return "Buzz" if number % 5 == 0 else False
+
+def fizz_buzz(number):
+    """
+    FizzBuzz
+    """
+    return "FizzBuzz" if number % 15 == 0 else False
+
+
+def match_fizzbuzz_with(number):
+    """
+    Match a number with the FizzBuzz sequence.
+
+
+    :param number: number we will check if its divisible by 3, 5 or 15.
+    :returns a string: Returns Fizz, Buzz, FizzBuzz, or a number  . type string
+    """
+
+    keys = fizz(number), buzz(number), fizz_buzz(number)
+
+    options = {
+        ("Fizz", False, False): "Fizz",
+        (False, "Buzz", False): "Buzz",
+        ("Fizz", "Buzz", "FizzBuzz"): "FizzBuzz",
+        (False, False, False): str(number)
+    }
+
+    return matches(options, keys)
+
+
+def run_fizzbuzz_sequence():
+    for number in range(101):
+        print(match_fizzbuzz_with(number))
