@@ -2,17 +2,17 @@ from distutils.core import setup
 
 
 setup(
-    name="matches",
-    packages=["matches"],
+    name="yelluw-matches",
+    packages=["yelluw-matches"],
     version="0.1.0",
-    description="matches is a simple pattern matching library",
+    description="matches is a simple and tiny pattern matching library",
     author="Pablo Rivera",
     author_email="pr@yelluw.com",
     url="https://github.com/yelluw/matches",
-    download_url="",
-    keywords=["pattern matching"],
+    download_url="https://github.com/yelluw/matches/archive/0.1.0.tar.gz",
+    keywords=["pattern matching", "Python 3", "Yelluw"],
     classifiers=[
-        'License :: OSI Approved :: MIT License',
-        'Programming Language :: Python :: 3'
-    ]
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 3",
+        ],
 )
