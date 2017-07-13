@@ -2,8 +2,8 @@ from distutils.core import setup
 
 
 setup(
-    name="yelluw-matches",
-    packages=["yelluw-matches"],
+    name="yelluw_matches",
+    packages=["yelluw_matches"],
     version="0.1.0",
     description="matches is a simple and tiny pattern matching library",
     author="Pablo Rivera",
