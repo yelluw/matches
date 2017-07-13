@@ -1,6 +1,6 @@
 #!/usr/bin/env Python3
 
-import matches
+from yelluw_matches import matches
 
 
 """
