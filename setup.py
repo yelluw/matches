@@ -4,7 +4,7 @@ from distutils.core import setup
 setup(
     name="yelluw_matches",
     packages=["yelluw_matches"],
-    version="0.1.0",
+    version="0.1.1",
     description="matches is a simple and tiny pattern matching library",
     author="Pablo Rivera",
     author_email="pr@yelluw.com",

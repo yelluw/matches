@@ -2,5 +2,5 @@
 setup.cfg
 setup.py
 test/test.py
-yelluw-matches/__init__.py
-yelluw-matches/matches.py
+yelluw_matches/__init__.py
+yelluw_matches/matches.py
